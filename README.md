@@ -1,5 +1,5 @@
 # Contact Book 📙
-## Utlising LinkedList (Java)
+## Utilising LinkedList (Java)
 
 Name: Muhammad Raihan Zulfi
 NIM: 2602229673
