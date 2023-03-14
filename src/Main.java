@@ -21,7 +21,7 @@ public class Main {
             menu = menu.toLowerCase();
 
             switch (menu) {
-                case "a" -> {
+                case "a" -> { // adding contact information
                     System.out.print("Name: ");
                     String name = scan.nextLine();
                     System.out.print("Phone No: ");
@@ -31,7 +31,7 @@ public class Main {
                     contact temp = new contact(name, PhoneNumber, email);
                     link.add(temp);
                 }
-                case "d" -> {
+                case "d" -> { // deleting out contact
                     if (link.size() == 0) {
                         System.out.println("There's no contact inside the book (～￣▽￣)～");
                         break;
@@ -47,7 +47,7 @@ public class Main {
                         }
                     }
                 }
-                case "e" -> {
+                case "e" -> { //email search
                     if (link.size() == 0) {
                         System.out.println("There's no contact inside the book (～￣▽￣)～");
                         break;
@@ -65,7 +65,7 @@ public class Main {
                         }
                     }
                 }
-                case "p" -> {
+                case "p" -> { // printing contact(s)
                     if (link.size() == 0) {
                         System.out.println("There's no contact inside the book (～￣▽￣)～");
                     }
@@ -78,7 +78,7 @@ public class Main {
                         }
                     }
                 }
-                case "s" -> {
+                case "s" -> { // search contact (by name)
                     if (link.size() == 0) {
                         System.out.println("There's no contact inside the book (～￣▽￣)～");
                         break;
@@ -96,7 +96,7 @@ public class Main {
                         }
                     }
                 }
-                case "q" -> System.out.println(" (closing Contact Book) ○( ＾皿＾)っ byebye …");
+                case "q" -> System.out.println(" (closing Contact Book) ○( ＾皿＾)っ byebye …"); // quiting
                 default -> System.out.println("Unexpected value: " + menu);
             }
         }
